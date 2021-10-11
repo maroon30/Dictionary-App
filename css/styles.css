@@ -1,0 +1,145 @@
+/* 
+  @author Suhana 
+  Project name == Dictioinary App
+  
+  Cleaning code == Done
+  Organizing code == Done
+  Property and value arrangement == Done
+
+*/
+
+/* Color Pallete: #d1eff5, #345B63 */
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+}
+
+*:not(i) {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #d1eff5;
+}
+
+#inp-word {
+    font-size: 16px;
+}
+
+.wrapper {
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    top: 50px;
+    transform: translateX(-50%);
+    width: 92vmin;
+}
+
+.container {
+    -webkit-box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+    padding: 80px 50px;
+    width: 100%;
+}
+
+.search-box {
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-box input {
+    border: none;
+    border-bottom: 3px solid #345B63;
+    outline: none;
+    padding: 5px;
+    width: 70%;
+}
+
+.search-box button {
+    background-color: #345B63;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    padding: 15px 0;
+    width: 25%;
+}
+
+.result {
+    position: relative;
+}
+
+.result h3 {
+    color: #1f194c;
+    font-size: 30px;
+}
+
+.result .word {
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.result button {
+    background-color: transparent;
+    border: none;
+    color: #345B63;
+    font-size: 18px;
+    outline: none;
+}
+
+.result .details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #75898d;
+    font-size: 14px;
+    gap: 10px;
+    margin: 5px 0 20px 0;
+}
+
+.word-meaning {
+    color: #575a7b;
+}
+
+.word-example {
+    border-left: 5px solid #345B63;
+    color: #575a7b;
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.error {
+    margin-top: 80px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 40px 30px;
+    }
+    
+    .search-box button {
+        font-size: 14px;
+    }
+}
